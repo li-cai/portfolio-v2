@@ -264,6 +264,10 @@ div#message {
         margin-top: 10px !important;
         top: auto !important;
     }    
+
+    #about {
+        font-size: 2em;
+    }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
