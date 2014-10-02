@@ -14,10 +14,12 @@
     <!-- Link to Scripts -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/jquery.color.js"></script>
+    <script src="js/processing.js"></script>
+    <script src="js/processing_control.js"></script>
     <script src="js/scripts.js"></script>
 </head>
 
-<body>
+<body onload="stopSketch();">
     <div class="wrapper">
         <div id="banner">
             <img src="images/header.png" class="header" />
@@ -61,6 +63,7 @@
 
                 <div id="development">
                     <img src="images/back-tile.png" class="back-tile" / > 
+
                     <div class="module">
                         <h1>ToolShare</h1>
                         <p class="subheading">Django | BootStrap | SVN</p>
@@ -70,12 +73,37 @@
                         <p>Through working on this project, I gained experience with full stack development using a <strong>MVC</strong> framework. In addition, I wrote numerous unit tests, participated in code reviews, went through cross-team beta testing, and conducted acceptance tests.</p>
                         <p><a href="https://github.com/li-cai/toolshare-message" target="_newtab">View Code Samples on GitHub</a></p>
                     </div>
+
+                    <div class="module">
+                        <h1>Medical Image Viewer</h1>
+                        <p class="subheading">Java | Design Patterns | Git</p>
+                        <img src="images/miv.png" class="screenshot" />
+                        <p>A project used for many years in the Engineering Software Subsystems class, the Medical Image Viewer is a <strong>Java</strong> application that displays studies of medical images and supports additional features such as leveling and sagittal/coronal reconstruction.</p>
+                        <p>I worked on the Medical Image Viewer using <strong>Git</strong> for version control on a team of four. The goal of this project was to design and develop a maintainable system with the help of various <strong>design patterns</strong> such as Observer, State, Strategy, and Composite.</p>
+                    </div>
+
+                    <div class="module">
+                        <h1>Pinwheel</h1>
+                        <p class="subheading">Processing</p>
+                        <canvas id="pinwheel" data-processing-sources="processing/SpinWheel.pde"></canvas>
+                        <p><button id="play" onclick="startSketch();"></button></p>
+                        <p id="pinwheel-info">An interactive pinwheel made using Processing. Press the play button to start the animation. Press the right or left arrow keys to speed up or slow down the wind speed.</p>
+                    </div>
+
+                    <div class="module">
+                        <h1>STEM Quiz</h1>
+                        <p class="subheading">HTML | CSS | jQuery</p>
+                        <img src="images/stemquiz.png" class="screenshot" />
+                        <p>STEM Quiz is a <strong>jQuery</strong> based personality quiz that I developed on a team of six at the RIT Women in Computing Hackathon. I enjoyed meeting and working with other women in computing students to develop an application that encourages women to pursue STEM.
+                        </p>
+                    </div>
+
                     <div class="module">
                         <h1>Generic Puzzle Solver</h1>
                         <p class="subheading">Java | Swing | BFS Algorithm</p>
                         <img src="images/chess.png" class="screenshot" />
-                        <p>For this project, I created a Generic Puzzle Solver written in <strong>Java</strong> which uses the <strong>BFS algorithm</strong> to solve puzzles in the fewest number of steps. The Chess Solitaire puzzle (pictured above) has a <strong>Swing</strong> GUI.</p>
-                        <p>The focus of this project was object-oriented programming, inheritance, and separation of concerns using MVC. A generic puzzle interface and solver was implemented to work with three different types of puzzles. The Chess Solitaire puzzle has a Swing GUI that creates a game board from a text file and allows the user to interact with the GUI to solve the puzzle. The user also has the option to reset to the original configuration or advance to the next step of the optimal solution by clicking "Hint".</p>
+                        <p>For this project, I created a Generic Puzzle Solver written in <strong>Java</strong> which uses the <strong>BFS algorithm</strong> to solve puzzles in the fewest number of steps.</p>
+                        <p>The focus of this project was object-oriented programming, inheritance, and separation of concerns using MVC. A generic puzzle interface and solver was implemented to work with three different types of puzzles. The Chess Solitaire puzzle has a <strong>Swing</strong> GUI that creates a game board from a text file and allows the user to interact with the GUI to solve the puzzle. The user also has the option to reset to the original configuration or advance to the next step of the optimal solution by clicking "Hint".</p>
                         <p><a href="https://github.com/li-cai/chess-solitaire" target="_newtab">View Code Samples on GitHub</a></p>
                     </div>
 

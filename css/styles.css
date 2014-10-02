@@ -34,6 +34,7 @@ a {
 
 a:hover {
     color: #FFC197;
+    border-bottom: 1px dotted #FFC197;
 }
 
 strong {
@@ -233,11 +234,30 @@ div#message {
     font-size: 1.2em;
 }
 
-/*@media screen and (max-width: 940) {
-    .wrapper {
-        width: 95%;
-    }
-}*/
+#play {
+    background-image: url('../images/playbutton.png');
+    background-color: transparent;
+    position: relative;
+    top: -110px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    border: 0;
+}
+
+#play:hover {
+    cursor: pointer;
+    background-image: url('../images/playhover.png');
+    transition: background-image 0.2s ease-in-out;   
+    -webkit-transition: background-image 0.2s ease-in-out;
+    -moz-transition: background-image 0.2s ease-in-out;
+    -o-transition: background-image 0.2s ease-in-out;
+    -ms-transition: background-image 0.2s ease-in-out;
+}
+
+#pinwheel {
+    width: 100%;
+}
 
 @media only screen and (max-width: 580px) {
     #top-banner {
